@@ -15,6 +15,8 @@
 		FC9A320827510C450046DBE7 /* SchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A320727510C450046DBE7 /* SchedulerTests.swift */; };
 		FC9A321227510C450046DBE7 /* SchedulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A321127510C450046DBE7 /* SchedulerUITests.swift */; };
 		FC9A321427510C450046DBE7 /* SchedulerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A321327510C450046DBE7 /* SchedulerUITestsLaunchTests.swift */; };
+		FC9A322D2752FC0F0046DBE7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A322C2752FC0F0046DBE7 /* Model.swift */; };
+		FC9A322F2752FC190046DBE7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A322E2752FC190046DBE7 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FC9A320D27510C450046DBE7 /* SchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9A321127510C450046DBE7 /* SchedulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerUITests.swift; sourceTree = "<group>"; };
 		FC9A321327510C450046DBE7 /* SchedulerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC9A322C2752FC0F0046DBE7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FC9A322E2752FC190046DBE7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				FC9A31F027510C440046DBE7 /* AppDelegate.swift */,
-				FC9A31F427510C440046DBE7 /* ViewController.swift */,
-				FC9A31F627510C440046DBE7 /* Main.storyboard */,
-				FC9A31F927510C450046DBE7 /* Assets.xcassets */,
-				FC9A31FB27510C450046DBE7 /* LaunchScreen.storyboard */,
-				FC9A31FE27510C450046DBE7 /* Info.plist */,
+				FC9A322B2752FBDE0046DBE7 /* ViewModel */,
+				FC9A322A2752FBD50046DBE7 /* Model */,
+				FC9A32292752FBCA0046DBE7 /* Controller */,
+				FC9A32272752FBAF0046DBE7 /* Storyboards */,
+				FC9A32282752FBBD0046DBE7 /* Resources */,
 			);
 			path = Scheduler;
 			sourceTree = "<group>";
@@ -122,6 +126,48 @@
 				FC9A321327510C450046DBE7 /* SchedulerUITestsLaunchTests.swift */,
 			);
 			path = SchedulerUITests;
+			sourceTree = "<group>";
+		};
+		FC9A32272752FBAF0046DBE7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A31F627510C440046DBE7 /* Main.storyboard */,
+				FC9A31FB27510C450046DBE7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FC9A32282752FBBD0046DBE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A31F927510C450046DBE7 /* Assets.xcassets */,
+				FC9A31FE27510C450046DBE7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC9A32292752FBCA0046DBE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A31F427510C440046DBE7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC9A322A2752FBD50046DBE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A322C2752FC0F0046DBE7 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC9A322B2752FBDE0046DBE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A322E2752FC190046DBE7 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9A322D2752FC0F0046DBE7 /* Model.swift in Sources */,
 				FC9A31F527510C440046DBE7 /* ViewController.swift in Sources */,
+				FC9A322F2752FC190046DBE7 /* ViewModel.swift in Sources */,
 				FC9A31F127510C440046DBE7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +485,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6FWZ3698Y8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Scheduler/Info.plist;
+				INFOPLIST_FILE = Scheduler/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -465,7 +513,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6FWZ3698Y8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Scheduler/Info.plist;
+				INFOPLIST_FILE = Scheduler/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
